@@ -1,0 +1,714 @@
+/*
+  overclock.net dark theme by Jiiks
+  http://www.overclock.net/t/1546841/
+  version: 1.09
+  date: 18.09.15
+*/
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("www.overclock.net") {
+
+  html{
+    background-color:#232323 !important;
+    color:#ADADAD !important;
+  }
+  
+  a, a:link, a:visited, table.forum-tbl-header h2 a, h1 , .post-content-area {
+    color:#ADADAD !important;
+  }
+  
+  body .btn, .btn {
+    background-color:#303030 !important;
+    border-radius: 0 !important;
+    color:#ADADAD !important;
+    border:1px solid #404040 !important;
+    outline:1px solid #000 !important;
+  }
+  
+  form#loginform .btn {
+    outline:none !important;
+  }
+  
+  body .btn:hover, .btn:hover, .ibtn:hover, a.ilink:hover {
+    background-color:#404040 !important;
+  }
+
+  #main-menu-area {
+    border-bottom: 1px solid #000;
+  }
+  
+  #search-area {
+    background:#303030;
+    border-top:1px solid #404040;
+  }
+  
+  #search-bar {
+    background:#232323;
+    border:1px solid #000;
+    outline:1px solid #404040;
+  }
+  
+  #search-bar #search {
+    background:#232323;
+    color:#ADADAD;
+  }
+  #search-bar .btn {
+    background:#303030 !important;
+  }
+  /*#search-bar .btn {
+    border-radius: 0;
+    background:#303030 !important;
+    border:1px solid #000 !important;
+    color:#ADADAD !important;
+  }*/
+  
+  #search-bar .btn:hover {
+    background:#404040 !important;
+    color:#ADADAD !important;
+  }
+  
+  #loggedin-box, #pm-content, #pm-message-container {
+    background:#323232 !important;
+  }
+  
+  div.conversation {
+    border-bottom: 1px solid #000 !important;
+  }
+  
+  #login-area a, #login-area a:link, #login-area a:visited, #advanced-search-submit {
+    color:#ADADAD !important;
+  }
+  
+  #content-area-left, .subject-title-box {
+    background: #303030;
+  }
+  
+  .hp-featured-content, .shazam {
+    background-color:#232323 !important;
+  }
+  
+  .cke_dialog .cke_dialog_title:before, .cke_dialog .yui3-widget-hd, .yui3-panel .cke_dialog_title:before, .yui3-panel .yui3-widget-hd {
+    background:#121212;
+    box-shadow: none;
+    border-color:#000;
+  }
+  
+  .cke_dialog .cke_dialog_body, .yui3-panel .yui3-panel-content, .cke_dialog .cke_dialog_footer, .cke_dialog .yui3-widget-ft, .yui3-panel .cke_dialog_footer, .yui3-panel .yui3-widget-ft {
+    background:#303030;
+    border:none;
+  }
+  
+  .cke_dialog.dialog-form .yui3-widget-buttons .button-cancel, .yui3-panel.dialog-form .yui3-widget-buttons .button-cancel  {
+    background:#222;
+    border:1px solid #000;
+  }
+  
+  .tabmenu li.active, .yui3-tabview-list li.yui3-tab-selected {
+    background:#222;
+    border-color:#000;
+    border-style: solid;
+    border-width: 1px 1px 0;
+  }
+  
+  #pm-module {
+    padding-left: 2px;
+  }
+  
+  #pm-module .pm-module-content {
+    background: #303030 !important;
+    color:#ADADAD;
+  }
+  
+  #pm-module .shazam h2 {
+    color:#ADADAD !important;
+    margin-left: 3px;
+  }
+
+  .pm-module-content .row {
+    border-bottom: 1px solid #000;
+    border-top:1px solid #404040;
+  }
+  
+  .pm-module-content .row span a {
+    color:#ADADAD;
+  }
+  
+  .pm-module-header-container {
+    border-bottom: 1px solid #000;
+  }
+  
+  .pm-module-header-container span {
+    border:none !important;
+  }
+  
+  .sponsor-btns {
+    background:#232323 !important;
+    border:1px solid #000 !important;
+  }
+
+  #spotlight-container .actionbar, .three-column h3, .two-column h3 {
+    background: #202020;
+    border-top:3px solid #121212;
+  }
+  
+  .staticstream .three-column .column_2, .staticstream .two-column .column_2 {
+    background:#303030;
+  }
+  
+  .staticstream .two-column div.row, .staticstream .three-column div.row {
+    border-bottom: 1px solid #000;
+    border-top:1px solid #404040;
+  }
+  
+  #spotlight-container h3, .three-column h3, .two-column h3 {
+    color:#ADADAD !important;
+  }
+  
+  .rtcol-box1, .rtcol-module, .featured-content, .forum-select-inner {
+    background:#232323 !important;
+  }
+  
+  .forum-select-inner{
+    border: 1px solid #404040 !important; 
+  }
+  
+  .home .forum-h1, #main #whosonline h3, .home #module-forums h3.global-thick-underline {
+    background: #202020;
+    border-top: 5px solid #121212;
+  }
+  
+  .rtcol-module, .featured-content {
+    border:1px solid #000;
+    outline: 1px solid #303030;
+  }
+  
+  .show-more-gradient {
+    background: linear-gradient(to bottom, rgba(30, 30, 30, 0) 0, #121212 100%) repeat scroll 0% 0% transparent;
+  }
+  
+  #site-stats {
+    background:#303030 !important;
+    border-top:5px solid #141414 !important;
+    border-bottom: 2px solid #141414 !important;
+  }
+  
+  .forum-select-inner ul {
+    border:1px solid #000 !important;
+  }
+  
+  .forum-select-inner ul li {
+    background:#303030 !important;
+    border:none !important;
+    border-bottom: 1px solid #000 !important;
+    border-top:1px solid #404040 !important;
+  }
+  
+  .forum-tbl-header-wrapper {
+    border-bottom: 1px solid #000;
+    padding-bottom:5px;
+  }
+  
+  .forum-list-tbl-wrapper {
+    border-top:1px solid #404040;
+  }
+  
+
+  table.navigation.horizontal tr, table.navigation.vertical tr, div.viewer-has-replied, tr.viewer-has-replied td {
+    background:#303030 !important;
+  }
+  
+  table.navigation.horizontal tr.alternate, table.navigation.vertical tr td.alternate {
+    background:#232323 !important;
+  }
+  
+  table.forum-list-tbl th, table.forum-list-tbl td {
+    border:1px solid #000 !important;
+  }
+  
+  .left-post-container .post-content-area {
+    color:#ADADAD !important;
+  }
+  
+  .postbit-underlay, post-info-stat-cont {
+    background: #303030 !important;
+  }
+  
+  table.forum-list-tbl th {
+    background:#121212 !important;
+  }
+  
+  table.forum-list-tbl {
+    border-left: 3px solid #121212;
+  }
+  
+  table.navigation.vertical tr:hover > td , div.viewer-has-replied:hover, tr.viewer-has-replied td:hover{
+    background:#404040 !important;
+  }
+  
+  .left-post-container .post-info-stat-cont .post-info-content, .forum-post-num, .forum-post-date {
+    color:#ADADAD !important;
+  }
+  
+  .post-info-content{
+    background:#161616 !important;
+  }
+  
+  .spoiler-link , .post-header, .H-toggle-expanded .H-toggle-title{
+    background-color:#121212;
+  }
+  
+  body .left-post-container .postbit-underlay {
+    background:#161616 !important;
+  }
+  
+  .H-toggle-expanded .H-toggle-title{
+    border-bottom: 1px solid #000 !important;
+  }
+  
+  .spoiler-hidden, .spoiler-vis, .wiki_markup pre, pre code {
+    background:#303030 !important;
+  }
+  
+  .signature.expand-featured-sig-item .signature-tab.signature-tabview-autoexpand, .signature-tabview-expanded .signature-tab.signature-tabview-selected, .signature-tabview .signature-tabview-body {
+    background:#242424;
+    border-color: #121212 !important;
+  }
+  
+  .tag-autocomplete-container .inner, .applied-tags li {
+    background: transparent;
+  }
+  
+  .applied-tags li {
+    border:none !important;
+  }
+  
+  .applied-tags li:hover {
+    background: #303030;
+  }
+  
+  body a.priact, body .form_actions .accented_primary_cta, body .form_actions .primary_cta:first-child {
+    background-color:#303030 !important;
+    border-radius: 0 !important;
+    color:#ADADAD !important;
+    border:1px solid #404040 !important;
+  }
+  
+  body a.priact:hover, body .form_actions .accented_primary_cta:hover, body .form_actions .primary_cta:first-child:hover {
+    background-color:#404040 !important;
+    border:1px solid #404040 !important;
+  }
+  
+  .tabmenu, .yui3-tabview-list {
+    background:#303030;
+    border-bottom: 1px solid #000;
+  }
+  #articles_container .tabmenu li.active {
+    background:#161616 !important;
+    border-top:3px solid #121212 !important;
+    border-right: 1px solid #000 !important;
+    border-left: 1px solid #000 !important;
+  }
+  #articles_container .tabmenu li.active a {
+    color:#ADADAD !important;
+  }
+  
+  .signature.expand-featured-sig-item .signature-tab, .signature-tabview-expanded .signature-tab {
+    border-bottom: 1px solid #121212 !important;
+  }
+  
+  .signature-tabview table.summary td, .signature-tabview table.summary th {
+    border-right-color: #121212 !important;
+  }
+  
+  .summary th {
+    border-right:5px solid #121212 !important;
+    border-top: 1px solid #121212 !important;
+  }
+  
+  .signature {
+    border-top:2px solid #121212 !important;
+  }
+  
+  .signature-tabview .signature-tab-collapse-button, .signature-tab-expand-button {
+    background-color: #121212 !important;
+    border-bottom: 1px solid #000;
+  }
+  
+  .forum-post-tools {
+    border-top:1px solid #121212;
+    border-bottom: 1px solid #121212;
+  }
+  
+  .forum-post-num {
+    background-color: #202020;
+  }
+
+  .post-header {
+    border-bottom: 1px solid #000;
+  }
+  
+  .post-container-inner {
+    border-top:1px solid #303030;
+  }
+  
+  .left-post-container {
+    background:#121212 !important;
+  }
+  
+  .single-post {
+    border:1px solid #404040 !important;
+  }
+  
+  .wiki_markup .quote-container .quote-block, .post-content-area td.alt2 {
+    background:#303030 !important;
+    border:1px solid #404040 !important;
+  }
+  
+  .fj-control-bar .forum-nav-control {
+    background:#303030 !important;
+    border-radius: 0;
+    border-color:#232323;
+  }
+  
+  #quick-reply-editor, #fp-container, .stream .stream-item-divider, #inline-pm, div.module_accent, .H-toggle-title{
+    background:#242424;
+    border:none !important;
+  }
+  
+  .stream .stream-item .stream-item-content:hover, .stream .stream-item:hover{
+    background:#404040 !important;
+  }
+  
+  .component.editor textarea, .component.editor .cke_wysiwyg_div, [data-component~="editor"] textarea, [data-component~="editor"] .cke_wysiwyg_div {
+    background: #404040;
+    color:#FFF;
+    border:1px solid #000;
+  }
+  
+  #ModuleSigPreview{
+    background:#232323;
+    border-top:2px solid #404040;
+    border-bottom: 2px solid #404040;
+  }
+  
+  #draft-list tr th, #draft-list tr td{
+    border-bottom: 1px solid #000;
+  }
+  
+  table.navigation.nostripe tr:hover td {
+    background:#404040 !important;
+  }
+  
+  ul.forum-filter-list, .tagging-module .inner-container, .sidebar-module .sidebar-mod-bar, #user-menu > ul, #info-container , .user-prof-body, .online-stat, .sub-pm-user, .stream-paginator a, #info-container #object-image, .actionbar{
+    background:#242424 !important;
+    border:1px solid #000;
+    outline:1px solid #404040;
+  }
+  
+  #sidebar h3, #smallsidebar h3 {
+    background:transparent !important;
+    border:none;
+  }
+  
+  .sponsor-btns .spon-btn-cont, .sponsor-btns .sponshow-cont {
+    border-top:1px solid #000;
+  }
+  
+  .SubMenu, .SubMenu ul, .SubMenu ul li{
+    background:#242424 !important;
+    border:none !important;
+  }
+  
+  div.text input, div.number input, tr.text input, div.password input, div.row textarea {
+    border:1px solid #000;
+  }
+  
+  .tagger-search-input-node {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .sidebar-module ul li {
+    border-bottom: 1px solid #000;
+  }
+  
+  .forum-announcement {
+    background:transparent;
+  }
+  
+  #preferences-pane #preferences-body {
+    background:#232323;
+  }
+  
+  .pn li a, span.pn a, .pn span.nxtprv, .thread-col .PageJumpWidget {
+    background:#303030 !important;
+    border-radius: 0 !important;
+    border:1px solid #999;
+  }
+  
+  .pn .curr, #preferences-pane {
+    background:#202020;
+    border-radius: 0 !important;
+    border:1px solid #999 !important;
+  }
+  
+  .pn li a:hover, span.pn a:hover {
+    background:#404040 !important;
+    border:1px solid #999 !important;
+    border-radius:0 !important;
+  }
+   .thread-col .PageJumpWidget a.pn-num:hover{
+     background:#404040 !important;
+   }
+  
+  .sub-pm-user li + li {
+    border-top:1px solid #000;
+  }
+
+  .stream .stream-std-filters li.stream-active-filter a em, .stream .stream-std-filters li a span.left {
+    background:#303030;
+  }
+  
+  /*1.01*/
+  .post-sig .quote-container {
+    background:#303030;
+  }
+  /*Annoying fix*/
+  .wiki_markup .quote-container .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block {
+    background: #303030 !important;
+  }
+  /*1.02*/
+  .tooltip .legacy{
+    border:1px solid #000;
+	  background-color:#303030;
+  }
+  /*1.03*/
+  #site-stats.ocn {
+    background:#232323 !important;
+  }
+  
+  #site-tools-module li{
+    border-bottom: none;
+  }
+  
+  #footer-content{
+    background: #141414;
+  }
+  #footer-stats, #footer-bottom{
+    background:#303030;
+  }
+  
+  div.left-post-container ul.post-user-stats .ocn-icons{
+    margin-bottom: 0;
+  }
+  #bc, .thread-footer{
+    border-bottom: 1px solid #000 !important;
+  }
+  #bc-bottom #bc{
+    border-top: 1px solid #000 !important;
+  }
+  body .forum-control .reply-btn {
+    border:1px solid #404040 !important;
+  }
+  body .forum-control .reply-btn:hover {
+    border:1px solid #404040 !important;
+    outline:1px solid #000 !important;
+  }
+  body .forum-control .reply-btn:active {
+    border:1px solid #404040 !important;
+    background-color: #303030 !important;
+  }
+  .forum-control {
+    padding:5px 5px 0 5px;
+  }
+  .poll-block {
+    background:#242424;
+    border-radius: 0;
+    border:1px solid #000;
+    outline: 1px solid #404040;
+  }
+  .poll-block h3 {
+    color:#ADADAD;
+  }
+  .vote-container {
+    border-top:1px solid #000;
+  }
+
+  .vote-list li{
+    border:1px solid #000;
+    outline: 1px solid #404040;
+    margin-top:5px;
+  }
+  
+  .vote-list li:hover{
+    border-radius: 0 !important;
+    border:1px solid #000;
+    outline: 1px solid #404040;
+    background:#303030;
+    color:#ADADAD;
+  }
+  
+  .vote-list li.vote-sel{
+    border-radius: 0 !important;
+    color:#000;
+  }
+  .vote-list li.vote-sel:hover {
+    color:#ADADAD;
+  }
+  .result-list li{
+    border-bottom: 1px solid #000;
+  }
+  #product-recent-review .recent-review .product-image, .search-options{
+    border:1px solid #000;
+    border-radius: 0;
+  }
+  #category-index .category-row,#category-index .category-row:first-child, .advanced-search{
+    border-top:2px solid #404040;
+  }
+  .advanced-search .searchby-forum select{
+    border:1px solid #404040;
+  }
+  .advanced-search .search-options .divider-line {
+    border-bottom:1px solid #404040;
+    background:#000;
+  }
+  .advanced-search .searchby-forum select option{
+    background:#242424;
+    color:#ADADAD;
+    border-top:1px solid #404040;
+    border-bottom: 1px solid #000;
+  }
+  .advanced-search .searchby-forum select option:hover{
+    background:#303030;
+    border-top:1px solid #404040;
+    border-bottom: 1px solid #000;
+  }
+  .post-content-area img.lightbox-enabled, .post-content-area a.H-lightbox-open img, .first-thumb-in-thread img.lightbox-enabled, .first-thumb-in-thread a.H-lightbox-open img, .thumb-in-thread img.lightbox-enabled, .thumb-in-thread a.H-lightbox-open img {
+    border:1px solid #404040;
+  }
+  /*1.05*/
+  .pm-module-content li.unread {
+    background-color: #3E3E3E !important;
+  }
+  
+  #pm-sidebar ul li.active {
+    background-color: #303030 !important;
+    border-radius:0;
+    margin-left:3px;
+  }
+  #prefs-nav .active a {
+    background-color:#232323;
+  }
+  div.select select, #pm-search-form input {
+    border:1px solid #000;
+    background-color: #282828;
+  }
+  .wiki_markup a, .wiki-markup a:visited {
+    color:#FFF !important;
+  }
+  
+  #pm-content .pm-toolbar{
+    padding:5px;
+  }
+  #pm-sidebar .custom {
+    border-top:1px solid #000;
+  }
+  #pm-sidebar .icon-pm-compose, #pm-search-form input, .H-privateMessages-search {
+    margin:3px;
+  }
+  .recent-reviews li{
+    padding:5px !important;
+  }
+  /*1.06*/
+  .thumbers-menu, .thumb-comment {
+    background:#303030;
+    border:1px solid #404040;
+  }
+  
+  ul.toggle-btn li {
+    border:1px solid #404040 !important;
+    border-radius: 0 !important;
+  }
+  
+  ul.toggle-btn .left, ul.toggle-btn .right {
+    background-color: #303030 !important;
+  }
+  
+  ul.toggle-btn li.down {
+    background-color: #242424 !important;
+  }
+  
+  .forum-list-main-txt > a{
+    color:#6E6E6E !important;
+  }
+  
+  a.thread-has-new-posts {
+    color:#ADADAD !important;
+  }
+  
+  /*1.07*/
+  .cke_dialog .cke_dialog_footer_buttons td a.cke_dialog_ui_button.cke_dialog_ui_button_ok, .cke_dialog .cke_dialog_footer_buttons td a.cke_dialog_ui_button.button-submit, .cke_dialog .yui3-widget-buttons .yui3-button.cke_dialog_ui_button_ok, .cke_dialog .yui3-widget-buttons .yui3-button.button-submit, .yui3-panel .cke_dialog_footer_buttons td a.cke_dialog_ui_button.cke_dialog_ui_button_ok, .yui3-panel .cke_dialog_footer_buttons td a.cke_dialog_ui_button.button-submit, .yui3-panel .yui3-widget-buttons .yui3-button.cke_dialog_ui_button_ok, .yui3-panel .yui3-widget-buttons .yui3-button.button-submit {
+    background:#232323;
+    border:1px solid #303030;
+    outline:1px solid #000;
+    box-shadow: none;
+  }
+  
+  .btn.depressed:hover, .btn.depressed, .btn_control.depressed:hover, .btn_control.depressed {
+    background-color: #202020 !important;
+    border:1px solid #000 !important;
+    outline:1px solid #323232 !important;
+  }
+  
+  
+  /*1.08*/
+  table.classifieds-header-tbl th, table.classifieds-header-tbl td, .classified {
+    background:#303030;
+  }
+  table.classifieds-header-tbl {
+    border:1px solid #404040 !important;
+  }
+  table.classifieds-header-tbl th, table.classifieds-header-tbl td, table.classifieds-header-tbl label:hover, table.classifieds-header-tbl label {
+    color:#ADADAD !important;
+  }
+  .forum-announcement{
+    border-color: #404040 !important;
+  }
+ 
+  /*1.09*/
+  button.editor-toolbar-item {
+    background-color:#BABABA !important;
+  }
+  button.editor-toolbar-item:hover {
+    background-color:#D7D7D7 !important;
+  }
+  .messaging {
+    background-color:#232323 !important;
+    border:1px solid #000;
+  }
+  .inline-editor input[type=text] {
+    background:#303030 !important;
+  }
+  
+  /*Flames*/
+  div.left-post-container .post-info-stat-cont .rep-icon img {
+    width:0;
+    height:0;
+    background-image:url('data:image/png;base64,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');
+    padding: 14px;
+    padding-bottom: 18px;
+    background-repeat: no-repeat;
+  }
+  
+  img[src="http://files.overclock.net/images/smilies/post-flame-small.gif"] {
+
+    background-image:url('data:image/png;base64,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');
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16px; 
+  height: 18px; 
+  padding-left: 16px;
+      
+  }
+}
