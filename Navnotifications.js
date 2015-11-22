@@ -14,8 +14,8 @@
     $("<style type='text/css'> .jncontainer { position:absolute; right:48px; height:38px; display:inline-block; top:27px; } .fixed-scroll-breakpoint .jncontainer { top:8px; } </style>").appendTo("head");
     $("<style type='text/css'> .jlink { font-size:12px; display:block !important; height:18px !important; color:#FFF !important; text-align:right !important; } .search-bar-outer, .ui-header-fixed ul#main-nav .search > a { right:165px !important; } .ui-header-fixed li.profile .user-avatar .notification-counter, .ui-header-fixed ul#main-nav li.messages, .ui-header-fixed ul#main-nav li.subscriptions { display:none; } </style>").appendTo("head");
     
-    var privateMessagesCount = $(".messages .notification-counter").first().text().replace('"', "").replace(/\s+/, "");
-    var subscriptionsCount = $(".subscriptions .notification-counter").first().text().replace('"', "").replace(/\s+/, "");
+    var privateMessagesCount = $(".messages .notification-counter").first().text().replace(/\s+/, "");
+    var subscriptionsCount = $(".subscriptions .notification-counter").first().text().replace(/\s+/, "");
         
     var notificationModule  = $("<li/>", {
         class: "jncontainer",
@@ -54,7 +54,7 @@
     
     
     if(privateMessagesCount > 0) messagesContainer.append(messagesCounter); else messagesContainer.append($("<span/>", { class:"jpadder", text: "0" }));
-    if(subscriptionsCount > 0) subsContainer.append(subsCounter); else subscriptionsCount.append($("<span/>", { class:"jpadder", text: "0" }));
+    if(subscriptionsCount > 0) subsContainer.append(subsCounter); else subsContainer.append($("<span/>", { class:"jpadder", text: "0" }));
     
     notificationModule.append(messagesContainer);
     notificationModule.append(subsContainer);
