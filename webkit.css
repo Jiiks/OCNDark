@@ -1,8 +1,9 @@
 @namespace url(http://www.w3.org/1999/xhtml);
+
  /**
   ** ==================================
   ** Overclock.net Dark Theme by Jiiks 
-  ** Version: 2.0                      
+  ** Version: 2.13               
   ** http://jiiks.net                  
   ** http://www.overclock.net/t/1546841
   ** ==================================
@@ -671,6 +672,9 @@
     background: #303030;
     border-color:#1D1D1D !important;
   }
+  .pm-inbox div.conversation:nth-child(odd) {
+    background-color:#202020;
+  }
   #pm-message-container .msg-unread-row {
     background:#404040;
   }
@@ -693,6 +697,7 @@
     border-top:1px solid #1D1D1D !important;
     color:#ADADAD !important;
   }
+  
   
   /*SUBS*/
   .tabmenu_flush, .tabmenu {
@@ -772,6 +777,36 @@
     border-color:#181818;
   }
   
+  /*RIG VIEWER*/
+  .spec_data td, .spec_data th {
+    border-bottom:1px solid #404040;
+    color:#ADADAD;
+  }
+  .global-thick-underline-lite, #view_list .components {
+    border-color:#404040 !important;
+  }
+  .product-affiliates tr {
+    border-bottom:1px solid #404040;
+  }
+  .total-cost, .sidebar-module.list-author.rtcol-box1 {
+    background-color:#1D1D1D;
+    color:#ADADAD;
+  }
+  
+  /*GALLERY VIEWER*/
+  .placard.shazam {
+    background-color:#1D1D1D !important;
+    color:#ADADAD !important;
+  } 
+  .gallery-message-bar {
+    background-color:#1D1D1D;
+    border:1px solid #404040;
+    color:#ADADAD;
+  }
+  #galleries_container .pagination_info {
+    color:#ADADAD;
+  }
+  
   /*NOTIFICATION*/
   .ui-header-fixed li.profile:hover .user-avatar .notification-counter, .ui-header-fixed li.profile .user-avatar .notification-counter {
     background:#1D1D1D !important;
@@ -844,7 +879,7 @@
     background-color:#1D1D1D !important;
     border-color:#242424 !important;
   }
-  #poll_form label, .row label, .row span {
+  #poll_form label, .poll-toggle * {
     color:#ADADAD !important;
   }
   .vote-container {
@@ -952,7 +987,6 @@
     background:#EFEFEF !important;
   }
   
-  
   /*DIALOGS*/
   .cke_dialog .cke_dialog_title::before, .cke_dialog .yui3-widget-hd, .yui3-panel .cke_dialog_title::before, .yui3-panel .yui3-widget-hd, .cke_dialog .cke_dialog_footer, .cke_dialog .yui3-widget-ft, .yui3-panel .cke_dialog_footer, .yui3-panel .yui3-widget-ft {
     background-color:#1D1D1D !important;
@@ -978,11 +1012,7 @@
     color:#ADADAD !important;
     border-color:#1D1D1D !important;
   }
-  
 
-  
-  
-  
   /*OTHER FIXES*/
   .tooltip .legacy{
     border:1px solid #000;
