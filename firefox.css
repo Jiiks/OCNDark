@@ -131,13 +131,13 @@
     height:26px !important;
   }
   /*EDIT AND FLAG SPECIAL*/
-  .icon-post-edit.ibtn.btn, .icon-report-to-mod.ibtn.btn {
+  .icon-post-edit.ibtn.btn, .icon-report-to-mod.ibtn.btn, .icon-delete.post-delete.ibtn.btn, .icon-post-lock.ibtn.btn, .icon-post-move.ibtn.btn, .icon-of-content-brand.ibtn.btn, .icon-issue-infraction.ibtn.btn {
     background-color:#121212 !important;
     border:5px solid #121212 !important;
     margin-left:3px !important;
     margin-top:7px !important;
   }
-  .icon-post-edit.ibtn.btn:hover, .icon-report-to-mod.ibtn.btn:hover {
+  .icon-post-edit.ibtn.btn:hover, .icon-report-to-mod.ibtn.btn:hover, .icon-delete.post-delete.ibtn.btn:hover, .icon-post-lock.ibtn.btn:hover, .icon-post-move.ibtn.btn:hover, .icon-of-content-brand.ibtn.btn:hover, .icon-issue-infraction.ibtn.btn:hover {
     background-color:#161616 !important;
     border:5px solid #161616 !important;
   }
@@ -818,9 +818,6 @@
     color:#ADADAD !important;
   }
   
-  
-  
-  
   /*SUBMENUS*/
   .SubMenu, ul.forum-filter-list {
     background:#303030 !important;
@@ -833,6 +830,49 @@
   
   .SubMenu ul li:hover, .SubMenu ul li a:hover, ul.forum-filter-list li:hover {
     background-color:#303030 !important;
+  }
+  
+  /*WHO'S ONLINE*/
+  .online-head {
+    color:#ADADAD !important;
+  }
+  #online-users-page li {
+    border-bottom: 1px solid #1D1D1D;
+    color:#ADADAD !important;
+  }
+  
+  
+  /*POLLS*/
+  .H-toggle-title, .poll-toggle, .poll-block {
+    background-color:#1D1D1D !important;
+    border-color:#242424 !important;
+  }
+  #poll_form label, .row label, .row span {
+    color:#ADADAD !important;
+  }
+  .vote-container {
+    border-top:1px solid #242424;
+  }
+  .vote-list li {
+    border-color:#303030 !important;
+    color:#ADADAD !important;
+  }
+  .vote-list li:hover {
+    background: #242424 !important;
+  }
+  .result-list li div {
+    color:#ADADAD !important;
+  }
+  .result-list li {
+    border-color: #303030;
+  }
+  .vote-list li.vote-sel {
+    background-color:#125410;
+  }
+  
+  /*SEARCH RESULTS*/
+  .search-results .result-count-summary, #resultSortingPreference, .search-result-txt p {
+    color:#ADADAD;
   }
   
   
@@ -867,6 +907,14 @@
   #subscribeSelect {
     width:150px;
   }
+  .single-post {
+    border: none !important;
+  }
+  .post-header {
+    background: #1D1D1D !important;
+    border: none !important;
+  }
+  
   
    /*RICH EDITOR*/
   .cke_chrome {
