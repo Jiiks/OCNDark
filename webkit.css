@@ -3,7 +3,7 @@
  /**
   ** ==================================
   ** Overclock.net Dark Theme by Jiiks 
-  ** Version: 2.14        
+  ** Version: 2.15   
   ** http://jiiks.net                  
   ** http://www.overclock.net/t/1546841
   ** ==================================
@@ -12,7 +12,6 @@
   
   /*OPTIONS*/
   .ui-header-fixed {
-    background: transparent !important;
     /*[[floatingnav]]*/
   }
   
@@ -96,24 +95,34 @@
     color:#ADADAD !important;
   }
 
-  /*BUTTONS*/
-  body .btn, body .forum-control .reply-btn, body a.priact, body .form_actions .accented_primary_cta, body .form_actions .primary_cta:first-child {
-    background-color: #121212 !important;
-    color:#ADADAD !important;
-    font-weight: bold !important;
-    border: 3px solid #121212 !important;
+  /*NEWBUTTONS*/
+  body .btn, body .forum-control .reply-btn, body a.priact, body .form_actions .accented_primary_cta, body .form_actions .primary_cta:first-child,.component.rating .btn.rating-button.post-rated, .component.rating .btn.rating-button, .forum-post-tools .btn-grp-right .btn, .yui3-panel .yui3-widget-buttons .yui3-button.button-submit, .yui3-panel.dialog-form .yui3-widget-buttons .button-cancel, .cke_dialog_ui_button {
+    background-color: #202020 !important;
+    border:1px solid #202020 !important;
+    border-top: 1px solid #303030 !important;
+    border-bottom: 1px solid #191919 !important;
+    
   }
-  body .btn:hover, body .forum-control .reply-btn:hover, body a.priact:hover, body .form_actions .accented_primary_cta:hover, body .form_actions .primary_cta:first-child:hover {
+  .component.rating .btn.rating-button.post-rated, .component.rating .btn.rating-button, .forum-post-tools .btn-grp-right .btn, .cke_dialog_ui_button {
+    height:18px !important;
+    padding:3px 8px !important;
+    margin:5px 2px !important;
+    line-height: 18px !important;
+  }
+  
+  .component.rating .btn.rating-button.post-rated, .component.rating .btn.rating-button, .forum-post-tools .btn-grp-right .rating-button {
+    height:26px !important;
+    margin-top:0 !important;
+  }
+  .component.rating .btn.rating-button.post-rated {
     background-color:#161616 !important;
-    border: 3px solid #161616 !important;
-    color:#FFF !important;
+    color:#ADADAD !important;
   }
-  /*Odd*/
-  .forum-post-tools .btn-grp-right .component.rating .btn.rating-button {
-    height:25.33px !important;
-  }
-  input.cta, button.cta {
-    line-height: 100% !important;
+  body .btn:hover, body .forum-control .reply-btn:hover, body a.priact:hover, body .form_actions .accented_primary_cta:hover, body .form_actions .primary_cta:first-child:hover,.component.rating .btn.rating-button.post-rated:hover, .component.rating .btn.rating-button:hover, .forum-post-tools .btn-grp-right .btn:hover {
+    background-color: #242424 !important;
+    border:1px solid #242424 !important;
+    border-top: 1px solid #303030 !important;
+    border-bottom: 1px solid #202020 !important;
   }
   
   /*DIALOGS*/
@@ -134,10 +143,7 @@
   #main a.H-toggleHideCollapse {
     border-width:6px !important;
   }
-  /*REP BUTTON SPECIAL*/
-  .component.rating .btn.rating-button {
-    height:26px !important;
-  }
+
   /*EDIT AND FLAG SPECIAL*/
   .icon-post-edit.ibtn.btn, .icon-report-to-mod.ibtn.btn, .icon-delete.post-delete.ibtn.btn, .icon-post-lock.ibtn.btn, .icon-post-move.ibtn.btn, .icon-of-content-brand.ibtn.btn, .icon-issue-infraction.ibtn.btn {
     background-color:#121212 !important;
@@ -670,6 +676,17 @@
     background:#242424 !important;
     border-color:#1D1D1D !important;
   }
+  /*DRAFTS*/
+  #draft-list tbody tr {
+    background-color:#303030 !important;
+    color:#ADADAD !important;
+  }
+  #draft-list tr th, #draft-list tr td {
+    border-color:#1D1D1D !important;
+  }
+  #draft-list tr:hover > td, #draft-list tr:hover > th {
+    background-color:#404040 !important;
+  }
   
   /*FORUM PREFERENCES*/
   .prefrows .row_1 {
@@ -1022,6 +1039,24 @@
   }
   .cke_selected a{
     background:#EFEFEF !important;
+  }
+  
+  /*IMAGE PROPERTIES*/
+  .cke_dialog .cke_dialog_title, .cke_dialog_body label.cke_required, .cke_dialog_body label {
+    color: #ADADAD !important;
+  }
+  .cke_dialog .cke_dialog_tabs, .cke_dialog .ImagePreviewBox table td {
+    background: #1D1D1D !important;
+    border-color:#242424 !important;
+    color:#ADADAD !important;
+  }
+  .cke_dialog .cke_dialog_tab.cke_dialog_tab_selected {
+    background:#303030 !important;
+    border-color:#242424 !important;
+
+  }
+  .cke_dialog .cke_dialog_footer_buttons td a.cke_dialog_ui_button, .cke_dialog .cke_dialog_footer_buttons td a.cke_dialog_ui_button.cke_dialog_ui_button_ok {
+    background: none !important;
   }
   
   /*DIALOGS*/
