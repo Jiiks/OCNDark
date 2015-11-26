@@ -5,82 +5,32 @@
  /**
   ** ==================================
   ** Overclock.net Dark Theme by Jiiks 
-  ** Version: 2.15   
+  ** Version: 2.16
   ** http://jiiks.net                  
   ** http://www.overclock.net/t/1546841
   ** ==================================
   **/
   
+  /*Userstyles.org Options*/
+  .ui-header-fixed { /*[[floatingnav]]*/ }
+  .ui-header-fixed ul#main-nav, .ui-header-fixed ul#main-nav .mainNav-logoLink { background-color: /*[[navbackground]]*/ !important; }
+  #feat-carousel-wrapper, .featured-content-body-container { /*[[hidecarousel]]*/ }
+  .ui-header-fixed ul#main-nav .mainNav-logoLink, .ui-header-fixed ul#main-nav .mainNav-logoLink:focus, .ui-header-fixed ul#main-nav .mainNav-logoLink:hover,.fixed-scroll-breakpoint .ui-header-fixed ul#main-nav .mainNav-logoLink  { /*[[oldlogo]]*/ }
+  /*[[navbarsearch]]*/
   
-  /*OPTIONS*/
-  .ui-header-fixed {
-    /*[[floatingnav]]*/
-  }
-  
-  .ui-header-fixed ul#main-nav, .ui-header-fixed ul#main-nav .mainNav-logoLink {
-    background-color: /*[[navbackground]]*/ !important;
-  }
-  
-  #feat-carousel-wrapper {
-    /*[[hidecarousel]]*/
-  }
- 
-  .featured-content-body-container {
-    /*[[hidecarousel]]*/
-  }
-  
-
-  .ui-header-fixed ul#main-nav .mainNav-logoLink, .ui-header-fixed ul#main-nav .mainNav-logoLink:focus, .ui-header-fixed ul#main-nav .mainNav-logoLink:hover,.fixed-scroll-breakpoint .ui-header-fixed ul#main-nav .mainNav-logoLink  {
-   /*[[oldlogo]]*/
-  }
-  
-  .fixed-scroll-breakpoint .ui-header-fixed {
-    -webkit-box-shadow:none !important;
-    -moz-box-shadow:none !important;
+  /*=====Removers=====*/
+  /*Box shadow remover, removes box shadow from elements*/
+  .fixed-scroll-breakpoint .ui-header-fixed, input, .tagger-search-input-node {
+    /*-webkit-box-shadow:none !important;
+    -moz-box-shadow:none !important;*/
     box-shadow:none !important;
   }
   
-  
-  /*[[navbarsearch]]*/
-  
-  
-  /*GLOBALS, CONTROLS ETC...*/
-  input[type="text"], .tagger-search-input-node {
-    background:#303030 !important;
-    color:#ADADAD !important;
-    border:1px solid #404040 !important;
+  /*Border radius remover, removes border radius from elements*/
+  input {
     border-radius: 0 !important;
-    -webkit-box-shadow:none !important;
-    box-shadow: none !important;
   }
-  input[type="submit"] {
-    background:#202020 !important;
-    color:#ADADAD !important;
-  }
-  input[type="submit"]:hover {
-    background:#303030 !important;
-  }
-  input[type="number"] {
-    background: #202020;
-    color:#ADADAD;
-    border:1px solid #404040 !important;
-  }
-  input[type="email"], input[type="password"] {
-    background:#303030 !important;
-  }
-  select {
-    background-color: #1D1D1D !important;
-    color:#A8A8A8;
-    border:1px solid #303030 !important;
-    -moz-appearance:none;
-    height:30px !important;
-    margin-left: 5px !important;
-    background: url('http://cdn.jiiks.net/ocndark/chevron_tiny.png');
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position:  right 10px center;
-  } 
-  
+
   /*ADMIN STUFF*/
   .admin-control-bar{background-color:#808080!important;border-color:#000!important}
   .forum-announcement-tools{background-color:#808080!important;border-bottom-color:#000!important}
@@ -96,68 +46,167 @@
   #footer a {
     color:#ADADAD !important;
   }
-
-  /*NEWBUTTONS*/
-  body .btn, body .forum-control .reply-btn, body a.priact, body .form_actions .accented_primary_cta, body .form_actions .primary_cta:first-child,.component.rating .btn.rating-button.post-rated, .component.rating .btn.rating-button, .forum-post-tools .btn-grp-right .btn, .yui3-panel .yui3-widget-buttons .yui3-button.button-submit, .yui3-panel.dialog-form .yui3-widget-buttons .button-cancel, .cke_dialog_ui_button {
+  .search-overlay {
+    background:#242424;
+    border: 1px solid #303030;
+  }
+  .search-overlay label {
+    color:#ADADAD !important;
+  }
+  
+  
+  /*=====Inputs Refactor=====*/
+  input[type="text"], input[type="number"], input[type="password"], input[type="email"], select {
+    background:#303030 !important;
+    color:#ADADAD !important;
+    border:1px solid #404040 !important;
+  }
+  select {
+    -moz-appearance:none;
+    height:30px !important;
+    margin-left: 5px !important;
+  }
+  
+  /*=====Buttons Refactor=====*/
+  
+  body .btn, 
+  body .forum-control .reply-btn, 
+  body a.priact, 
+  body .form_actions .accented_primary_cta, 
+  body .form_actions .primary_cta:first-child,
+  .component.rating .btn.rating-button.post-rated, 
+  .component.rating .btn.rating-button, 
+  .forum-post-tools .btn-grp-right .btn, 
+  .yui3-panel .yui3-widget-buttons .yui3-button.button-submit, 
+  .yui3-panel.dialog-form .yui3-widget-buttons .button-cancel, 
+  .cke_dialog_ui_button {
     background-color: #202020 !important;
-    border:1px solid #202020 !important;
-    border-top: 1px solid #303030 !important;
-    border-bottom: 1px solid #191919 !important;
-    
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color:#303030 #202020 #191919 #202020 !important;
   }
-  .component.rating .btn.rating-button.post-rated, .component.rating .btn.rating-button, .forum-post-tools .btn-grp-right .btn, .cke_dialog_ui_button {
-    height:18px !important;
-    padding:3px 8px !important;
-    margin:5px 2px !important;
-    line-height: 18px !important;
-  }
-  
-  .component.rating .btn.rating-button.post-rated, .component.rating .btn.rating-button, .forum-post-tools .btn-grp-right .rating-button {
-    height:26px !important;
-    margin-top:0 !important;
-  }
-  .component.rating .btn.rating-button.post-rated {
-    background-color:#161616 !important;
-    color:#ADADAD !important;
-  }
-  body .btn:hover, body .forum-control .reply-btn:hover, body a.priact:hover, body .form_actions .accented_primary_cta:hover, body .form_actions .primary_cta:first-child:hover,.component.rating .btn.rating-button.post-rated:hover, .component.rating .btn.rating-button:hover, .forum-post-tools .btn-grp-right .btn:hover {
+  body .btn:hover,
+  body .forum-control .reply-btn:hover, 
+  body a.priact:hover, 
+  body .form_actions .accented_primary_cta:hover, 
+  body .form_actions .primary_cta:first-child:hover,
+  .component.rating .btn.rating-button.post-rated:hover, 
+  .component.rating .btn.rating-button:hover, 
+  .forum-post-tools .btn-grp-right .btn:hover, 
+  .yui3-panel .yui3-widget-buttons .yui3-button.button-submit:hover, 
+  .yui3-panel.dialog-form .yui3-widget-buttons .button-cancel:hover, 
+  .cke_dialog_ui_button:hover {
     background-color: #242424 !important;
-    border:1px solid #242424 !important;
-    border-top: 1px solid #303030 !important;
-    border-bottom: 1px solid #202020 !important;
+    border-color:#303030 #242424 #202020 #242424 !important;
+  }
+  body .btn:focus,
+  body .forum-control .reply-btn:focus, 
+  body a.priact:focus, 
+  body .form_actions .accented_primary_cta:focus, 
+  body .form_actions .primary_cta:first-child:focus,
+  .component.rating .btn.rating-button.post-rated:focus, 
+  .component.rating .btn.rating-button:focus, 
+  .forum-post-tools .btn-grp-right .btn:focus, 
+  .yui3-panel .yui3-widget-buttons .yui3-button.button-submit:focus, 
+  .yui3-panel.dialog-form .yui3-widget-buttons .button-cancel:focus, 
+  .cke_dialog_ui_button:focus {
+    background-color: #242424 !important;
+    border-color:#303030 #242424 #202020 #242424 !important;
   }
   
-  /*DIALOGS*/
-  .yui3-panel .yui3-widget-buttons .yui3-button {
-    background: #121212 !important;
-    color:#ADADAD !important;
+  /*Specific fixes*/
+  .forum-post-tools .btn-grp-right .btn {
+    width:50px !important;
+    height:25px !important;
+    box-sizing: border-box !important;
+    line-height: 22px !important;
+    padding: 0 !important;
+    text-align: center !important;
     font-weight: bold !important;
-    border: 1px solid #121212 !important;
-    -webkit-box-shadow:none !important;
-    -moz-box-shadow:none !important;
-    box-shadow:none !important;
   }
-  .yui3-panel .yui3-widget-buttons .yui3-button:hover {
-    background:#161616 !important;
-    color:#FFF !important;
+  body .forum-control .reply-btn, body .forum-control .icon-thread-create-discussion, body .forum-control .icon-thread-create {
+    height: 25px !important;
+    line-height: 25px !important;
+  }
+  .fj-menu.btn {
+    height:30px !important;
+  }
+  .icon-post-edit.ibtn.btn, 
+  .icon-report-to-mod.ibtn.btn, 
+  .icon-delete.post-delete.ibtn.btn, 
+  .icon-post-lock.ibtn.btn, 
+  .icon-post-move.ibtn.btn, 
+  .icon-of-content-brand.ibtn.btn, 
+  .icon-issue-infraction.ibtn.btn {
+    background-color:#202020 !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color:#303030 #202020 #191919 #202020 !important;
+    margin-left:3px !important;
+    margin-top:7px !important;
+    padding: 5px !important;
+    background-origin: content-box !important;
+  }
+  .icon-post-edit.ibtn.btn:hover, 
+  .icon-report-to-mod.ibtn.btn:hover, 
+  .icon-delete.post-delete.ibtn.btn:hover, 
+  .icon-post-lock.ibtn.btn:hover, 
+  .icon-post-move.ibtn.btn:hover, 
+  .icon-of-content-brand.ibtn.btn:hover, 
+  .icon-issue-infraction.ibtn.btn:hover {
+    background-color: #242424 !important;
+    border-color:#303030 #242424 #202020 #242424 !important;;
+  }
+
+  /*=====Pagination Refactor=====*/
+
+  .PageJumpWidget .pn li a, .thread-col .PageJumpWidget a.pn-num{
+    background-color: #202020 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color:#303030 #202020 #191919 #202020 !important;
   }
   
+  .PageJumpWidget .pn li a:hover, .PageJumpWidget .pn li a:active, .thread-col .PageJumpWidget a.pn-num:hover, .thread-col .PageJumpWidget a.pn-num:active {
+    background-color: #242424 !important;
+    border-color:#303030 #242424 #202020 #242424 !important;
+  }
+  
+  .PageJumpWidget .pn .curr, .pn span.nxtprv {
+    background-color: #404040 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color:#505050 #303030 #292929 #303030 !important;
+  }
+
+  .cke_dialog .cke_dialog_footer_buttons td a span {
+    background: none !important;
+    border: none !important;
+  }
+  .component.form-embedimage .uploader-url .btn {
+    height:20px !important;
+  }
+  .inline-edit-post-container .full-page-editor .btn {
+    height: 25px !important;
+  }
+  #post-edit .form_actions .btn {
+    height: 30px !important;
+    padding: 5px !important;
+  }
+  
+  /*Overclocked accounts*/
+  *[title="Overclocked"] {
+    color:#8493AD !important;
+  }
+  /*Retired Staff*/
+  *[title="Retired Staff"] {
+    color:#617DCB !important;
+  }
+
   #main a.H-toggleHideCollapse {
     border-width:6px !important;
   }
 
-  /*EDIT AND FLAG SPECIAL*/
-  .icon-post-edit.ibtn.btn, .icon-report-to-mod.ibtn.btn, .icon-delete.post-delete.ibtn.btn, .icon-post-lock.ibtn.btn, .icon-post-move.ibtn.btn, .icon-of-content-brand.ibtn.btn, .icon-issue-infraction.ibtn.btn {
-    background-color:#121212 !important;
-    border:5px solid #121212 !important;
-    margin-left:3px !important;
-    margin-top:7px !important;
-  }
-  .icon-post-edit.ibtn.btn:hover, .icon-report-to-mod.ibtn.btn:hover, .icon-delete.post-delete.ibtn.btn:hover, .icon-post-lock.ibtn.btn:hover, .icon-post-move.ibtn.btn:hover, .icon-of-content-brand.ibtn.btn:hover, .icon-issue-infraction.ibtn.btn:hover {
-    background-color:#161616 !important;
-    border:5px solid #161616 !important;
-  }
-  
   html, body {
     background-color:#1D1D1D;
   }
@@ -179,14 +228,7 @@
     background-color: #EEE;
   }
   
-  /*PAGE JUMPER*/
-  .inline-overlay.PageJumpWidget {
-    background:#303030 !important;
-    border: 1px solid #1D1D1D !important;
-  }
-  .inline-overlay.PageJumpWidget div.row {
-    color:#ADADAD !important;
-  }
+  
   
   /*PM MODULE*/
   #sidebar .shazam {
@@ -246,12 +288,7 @@
     color:#ADADAD !important;
   }
   
-  .ibtn.io, .H-toggleHideCollapse {
-    background-color:#303030 !important;
-    border-color:#303030 !important;
-    border-width: 7px !important;
-    border-style:solid !important;
-  }
+  
 
   .staticstream.shazam, .staticstream .column_2 { 
     background-color:#181818 !important;
@@ -415,9 +452,6 @@
     border:none;
     color:#ADADAD;
   }
-  .forum-nav-control .btn {
-    height: 28px;
-  }
   
   /*THREAD*/
   .forum-nav-control a, a.H-Menu-toggle {
@@ -487,38 +521,7 @@
     color:#ADADAD !important;
   }
   
-  /*PAGINATION*/
-  .thread-col .PageJumpWidget {
-    background:#202020 !important;
-    border-radius: 0 !important;
-  }
-  .PageJumpWidget a.pn-num {
-    border-radius: 0 !important;
-  }
-  .PageJumpWidget a.pn-num:hover {
-    background: #303030 !important;
-  }
   
-  .pn span.nxtprv, .pn .curr, .pn li a, span.pn a {
-    border-radius: 0 !important;
-    color:#ADADAD !important;
-  }
-  
-  .pn span.nxtprv:hover, .pn li a:hover, span.pn a:hover {
-    background: #303030 !important;
-    color:#FFF !important;
-    border: 1px solid #404040 !important;
-  }
-  
-  .pn .curr {
-    background:#303030 !important;
-    border: 1px solid #404040 !important;
-  }
-  
-  .pn span.nxtprv, .pn li a, span.pn a {
-    background:#202020 !important;
-    border: 1px solid #303030 !important;
-  }
   
   /*SPOILER*/
   .spoiler-link {
