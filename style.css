@@ -25,7 +25,9 @@
     -moz-box-shadow:none !important;*/
     box-shadow:none !important;
   }
-  
+  .thread-has-new-posts {
+    color:#EBEBEB !important;
+  }
   /*Border radius remover, removes border radius from elements*/
   input {
     border-radius: 0 !important;
@@ -156,6 +158,10 @@
   .icon-issue-infraction.ibtn.btn:hover {
     background-color: #242424 !important;
     border-color:#303030 #242424 #202020 #242424 !important;;
+  }
+  /*View full post*/
+  .forum-post-tools .btn-grp-right .icon-post-view-full  {
+    min-width:120px !important;
   }
 
   /*=====Pagination Refactor=====*/
@@ -691,6 +697,10 @@
   }
   #draft-list tr:hover > td, #draft-list tr:hover > th {
     background-color:#404040 !important;
+  }
+  /*USER POST*/
+  div.post-content-area.indexable div.postby_body {
+    color:#ADADAD !important;
   }
   
   /*FORUM PREFERENCES*/
