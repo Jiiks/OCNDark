@@ -5,7 +5,7 @@
  /**
   ** ==================================
   ** Overclock.net Dark Theme by Jiiks 
-  ** Version: 2.16
+  ** Version: 2.18
   ** http://jiiks.net                  
   ** http://www.overclock.net/t/1546841
   ** ==================================
@@ -17,6 +17,12 @@
   #feat-carousel-wrapper, .featured-content-body-container { /*[[hidecarousel]]*/ }
   .ui-header-fixed ul#main-nav .mainNav-logoLink, .ui-header-fixed ul#main-nav .mainNav-logoLink:focus, .ui-header-fixed ul#main-nav .mainNav-logoLink:hover,.fixed-scroll-breakpoint .ui-header-fixed ul#main-nav .mainNav-logoLink  { /*[[oldlogo]]*/ }
   /*[[navbarsearch]]*/
+  .ui-header-fixed #main-menu-area {
+    /*[[fullwidthnav]]*/
+  }
+  #forum-navbar-top, #forum-navbar-btm {
+    /*[[hideforumnav]]*/
+  }
   
   /*=====Removers=====*/
   /*Box shadow remover, removes box shadow from elements*/
@@ -67,6 +73,10 @@
     -moz-appearance:none;
     height:30px !important;
     margin-left: 5px !important;
+    background:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGYSURBVHgBAIgBd/4ATk5OjU5OThNOTk4ATk5OAE9PTwBOTk4ATk5OAE9PTwBOTk4ATk5OAE5OThNOTk6NAE1NTf9NTU3pTk5OH05OTgBPT08ATk5OAE5OTgBPT08ATk5OAE5OTh9NTU3pTU1N/wBNTU3uTU1N/01NTf1OTk5WT09PAE5OTgBOTk4AT09PAE5OTlZNTU39TU1N/01NTe4ATU1NuE1NTf9NTU3/TU1N/05OTpJOTk4ATk5OAE5OTpJNTU3/TU1N/01NTf9NTU24AE5OTgBOTk6TTU1N/01NTf9NTU3/TU1Nrk1NTa5NTU3/TU1N/01NTf9OTk6TTk5OAABOTk4ATk5OAE5OTldNTU39TU1N/01NTf9NTU3/TU1N/01NTf1OTk5XTk5OAE5OTgAATk5OAE5OTgBOTk4ATk5OH01NTdRNTU3/TU1N/01NTdVOTk4fTk5OAE5OTgBOTk4AAE5OTgBOTk4ATk5OAE5OTgBOTk4ATU1Ntk1NTbZOTk4ATk5OAE5OTgBOTk4ATk5OAAEAAP//ElqALjhTO1IAAAAASUVORK5CYII=') !important;
+    background-repeat: no-repeat !important;
+    background-size: 12px 8px !important;
+    background-position:  right 10px center !important;
   }
   
   /*=====Buttons Refactor=====*/
@@ -116,6 +126,21 @@
     border-color:#303030 #242424 #202020 #242424 !important;
   }
   
+  body .btn:active,
+  body .forum-control .reply-btn:active, 
+  body a.priact:active, 
+  body .form_actions .accented_primary_cta:active, 
+  body .form_actions .primary_cta:first-child:active,
+  .component.rating .btn.rating-button.post-rated:active, 
+  .component.rating .btn.rating-button:active, 
+  .forum-post-tools .btn-grp-right .btn:active, 
+  .yui3-panel .yui3-widget-buttons .yui3-button.button-submit:active, 
+  .yui3-panel.dialog-form .yui3-widget-buttons .button-cancel:active, 
+  .cke_dialog_ui_button:active {
+    background-color: #242424 !important;
+    border-color:#303030 #242424 #202020 #242424 !important;
+  }
+  
   /*Specific fixes*/
   .forum-post-tools .btn-grp-right .btn {
     width:50px !important;
@@ -157,7 +182,30 @@
   .icon-of-content-brand.ibtn.btn:hover, 
   .icon-issue-infraction.ibtn.btn:hover {
     background-color: #242424 !important;
-    border-color:#303030 #242424 #202020 #242424 !important;;
+    border-color:#303030 #242424 #202020 #242424 !important;
+  }
+  .icon-post-edit.ibtn.btn:focus, 
+  .icon-report-to-mod.ibtn.btn:focus, 
+  .icon-delete.post-delete.ibtn.btn:focus, 
+  .icon-post-lock.ibtn.btn:focus, 
+  .icon-post-move.ibtn.btn:focus, 
+  .icon-of-content-brand.ibtn.btn:focus, 
+  .icon-issue-infraction.ibtn.btn:focus {
+    background-color: #242424 !important;
+    border-color:#303030 #242424 #202020 #242424 !important;
+  }
+  .icon-post-edit.ibtn.btn:active, 
+  .icon-report-to-mod.ibtn.btn:active, 
+  .icon-delete.post-delete.ibtn.btn:active, 
+  .icon-post-lock.ibtn.btn:active, 
+  .icon-post-move.ibtn.btn:active, 
+  .icon-of-content-brand.ibtn.btn:active, 
+  .icon-issue-infraction.ibtn.btn:active {
+    background-color: #242424 !important;
+    border-color:#303030 #242424 #202020 #242424 !important;
+  }
+  .forum-post-tools .btn-grp-right .icon-post-multi-quote.depressed {
+    background:#121212 !important;
   }
   /*View full post*/
   .forum-post-tools .btn-grp-right .icon-post-view-full  {
