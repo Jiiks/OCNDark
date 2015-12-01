@@ -5,7 +5,7 @@
  /**
   ** ==================================
   ** Overclock.net Dark Theme by Jiiks 
-  ** Version: 2.18
+  ** Version: 2.19
   ** http://jiiks.net                  
   ** http://www.overclock.net/t/1546841
   ** ==================================
@@ -506,7 +506,7 @@
     border:none;
     color:#ADADAD;
   }
-  
+  .ui-header-fixed nav{background: #242424!important;}
   /*THREAD*/
   .forum-nav-control a, a.H-Menu-toggle {
     padding:5px !important;
@@ -521,9 +521,12 @@
     border-color:#1D1D1D !important;
   }
   
-  .wiki_markup .quote-container .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block {
+  .wiki_markup .quote-container .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .wiki_markup .quote-container .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block .quote-block, .post-sig .quote-container {
     background: #303030 !important;
     border-color:#1D1D1D !important;
+  }
+  .post-sig .quote-container {
+    color:#ADADAD;
   }
   
   /*BREADCRUMBS*/
@@ -625,10 +628,9 @@
     background:#181818;
     padding:5px;
   }
-  .review-snip {
+  .review-snip, #sidebar {
     color:#ADADAD;
   }
-  
   /*SIGNATURE/RIG*/
   .signature {
     border-top:2px solid #1D1D1D;
@@ -990,6 +992,17 @@
     color:#ADADAD !important;
   }
   
+  /*MARKETPLACE*/
+  table.classifieds-header-tbl {
+    border-color:#303030 !important;
+  }
+  table.classifieds-header-tbl tr th, table.classifieds-header-tbl tr td{
+    background-color:#1D1D1D !important;
+    color:#ADADAD;
+  }
+  table.classifieds-header-tbl label, .thumbnail_body,  .classifieds_listing strong.type, .classifieds_listing .price{
+    color:#ADADAD;
+  }
   
   /*POLLS*/
   .H-toggle-title, .poll-toggle, .poll-block {
@@ -1017,6 +1030,20 @@
   }
   .vote-list li.vote-sel {
     background-color:#125410;
+  }
+  
+  /*TAGS*/
+  .applied-tags li, .remove-tag{
+    background:#1D1D1D !important;
+    border-color:#303030 !important;
+  }
+  
+  .applied-tags li:hover {
+    background:#1F1F1F !important;
+  }
+  
+  .tag-type {
+    background:#303030 !important;
   }
   
   /*SEARCH RESULTS*/
@@ -1103,6 +1130,17 @@
   .cke_selected a{
     background:#EFEFEF !important;
   }
+  .cke_menubutton_icon, .cke_menubutton_label {
+    background:#BABABA !important;
+  }
+  #AttachmentDescription {
+    background:#303030;
+    border-color:#1D1D1D;
+    color:#ADADAD;
+  }
+  
+  /*INSERT ATTACHMENT*/
+  
   
   /*IMAGE PROPERTIES*/
   .cke_dialog .cke_dialog_title, .cke_dialog_body label.cke_required, .cke_dialog_body label {
@@ -1173,6 +1211,7 @@
   width: 16px; 
   height: 18px; 
   padding-left: 16px;
-      
   }
+
+  
 }
