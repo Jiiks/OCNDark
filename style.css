@@ -5,7 +5,7 @@
  /**
   ** ==================================
   ** Overclock.net Dark Theme by Jiiks 
-  ** Version: 2.19
+  ** Version: 2.2
   ** http://jiiks.net                  
   ** http://www.overclock.net/t/1546841
   ** ==================================
@@ -13,7 +13,8 @@
   
   /*Userstyles.org Options*/
   .ui-header-fixed { /*[[floatingnav]]*/ }
-  .ui-header-fixed ul#main-nav, .ui-header-fixed ul#main-nav .mainNav-logoLink { background-color: /*[[navbackground]]*/ !important; }
+  .ui-header-fixed ul#main-nav, .ui-header-fixed ul#main-nav .mainNav-logoLink{ background-color: /*[[navbackground]]*/ !important; }
+  #masthead, #masthead nav { background: /*[[navbackground]]*/ !important; }
   #feat-carousel-wrapper, .featured-content-body-container { /*[[hidecarousel]]*/ }
   .ui-header-fixed ul#main-nav .mainNav-logoLink, .ui-header-fixed ul#main-nav .mainNav-logoLink:focus, .ui-header-fixed ul#main-nav .mainNav-logoLink:hover,.fixed-scroll-breakpoint .ui-header-fixed ul#main-nav .mainNav-logoLink  { /*[[oldlogo]]*/ }
   /*[[navbarsearch]]*/
@@ -752,6 +753,21 @@
   div.post-content-area.indexable div.postby_body {
     color:#ADADAD !important;
   }
+  /*FOLDING STATS*/
+  div#folding-user-info {
+    background: #202020!important;
+    padding: 5px!important;
+    margin-top: 33px!important;
+  }
+  div#folding-user-info h3 {
+    margin-top: 0px!important;
+  }
+  div#folding-user-info table {
+    margin-bottom: 0px!important;
+  }
+  div#folding-user-info table tr,  div#folding-user-info table thead {
+    border: 1px transparent!important;
+  }
   
   /*FORUM PREFERENCES*/
   .prefrows .row_1 {
@@ -1051,6 +1067,20 @@
     color:#ADADAD;
   }
   
+  /*REVIEWS*/
+  #product-recent-review .recent-review.primary .product-image, #product-recent-review .recent-review.secondary .product-image img, #mini-product-summary section, article.product-review.review-fullpage .review-footer, .product-section-header {
+    border-color:#303030;
+  }
+  #product-summary-header .product-rank strong, #product-summary-header .product-rank, #mini-product-summary .sidebar-section-title, #mini-product-summary .product-purchase-details {
+    color:#ADADAD;
+  }
+  #mini-product-summary .product-vendors table {
+    border-style: solid;
+    border-color:#303030;
+  }
+  article.product-review.review-fullpage .review-footer {
+    background:#1D1D1D;
+  }
   
   /*EDITOR*/
   #quick-reply-editor, #fp-container {
@@ -1191,6 +1221,9 @@
     border:1px solid #000;
 	  background-color:#303030;
     color:#ADADAD !important;
+  }
+  .tooltip .legacy .title {
+    color:#EBEBEB !important;
   }
   
   /*FIX FOR REP AND SIG FLAMES*/
